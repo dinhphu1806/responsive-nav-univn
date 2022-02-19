@@ -129,6 +129,7 @@ nav .btn:hover a{
         width: 100px;
     }
 }
+/*respomsive mobile*/
 @media (max-width: 901px){
     .nav-top{
         background-color:#01b3ac;

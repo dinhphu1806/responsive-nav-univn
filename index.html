@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./assets/modal.css">
     <script
          src="https://code.jquery.com/jquery-3.6.0.js">
     </script>
@@ -20,8 +21,8 @@
                 <li><a href="#">Về UniCreation</a></li>
                 <li><a href="#">Thanh toán</a></li>
                 <li><a href="#">Tin tức</a></li>
-                <li><a href="#">Kiến thức Website</a></li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="https://dinhphu1806.github.io/slick-slider/">Kiến thức Website</a></li>
+                <li><a href="https://dinhphu1806.github.io/form-sign-in/">Liên hệ</a></li>
                 <li><a class="open-search" href="#"></a></li>
             </ul>
             <label class="icon-bar">
@@ -38,14 +39,53 @@
             <li><a href="#">Giao diện theo gói <i class="fas fa-angle-down"></i></a></li>
             <li><a href="#">Dịch vụ cung cấp <i class="fas fa-angle-down"></i></a></li>
         </ul>
-        <div class="btn">
-            <a href="#">Đăng ký tư vấn</a>
+        <div class="btn ">
+            <a class="js-btn" href="#">Đăng ký tư vấn</a>
         </div>     
     </nav>
    
-    <script src="app.js">
+    
         
     </script>
+   <!-- modal -->
+   <div class="modal js-modal"> <!--đầu tiên thêm js-modal-->
+     <div class="modal-container js-modal-container"> <!--thứ 2 thêm js-modal-container-->
+       <div class="modal-close js-modal-close">X</div> <!--thứ 3 thêm js-modal-close-->
+       <div class="modal-content">
+           <div class="modal-left">
+                <img style="max-width: 140px;" src="https://univn.vn/wp-content/themes/unicreation/lib/images/logo.svg" alt="">
+                <h1>Thông tin liên hệ</h1>
+                <h4>Địa chỉ: tầng 6, số 303 Vũ Tông Phan, Q. Thanh Xuân, TP Hà Nội</h4> <br>
+                <h4>Hotline: 0967.508.333</h4> <br>
+                <h4>Email: info@unicreation.vn</h4> <br>
+                <h4>Website: univn.vn</h4>
+           </div>
+           <div class="modal-right">
+               <h1>ĐĂNG KÝ TƯ VẤN</h1><br>
+               <h4>Mời bạn điền vào các trường thông tin dưới đây, chúng tôi sẽ gọi lại cho bạn. <br>
+                Cuộc gọi hoàn toàn miễn phí!</h4>
+                <form action="" class="form-action">
+                    <label for="">Tên của bạn</label>
+                    <input type="text" required placeholder="Nhập tên của bạn ...">
+                    <label for="">Số điện thoại (*)</label>
+                    <input type="text" required placeholder="Nhập SĐT ...">
+                    <label for="">Email</label>
+                    <input type="email" required placeholder="Nhập email ..."> 
+                    <label for="">Gửi đi</label>
+                    <input type="submit" required> 
+                    <span>(*) Trường thông tin bắt buộc</span>
+                </form>
+        </div>
+
+       </div>
+     </div>
+   </div>
+  
    
+   
+   <!--js-->
+
+   <script src="app.js"></script>
+   <script src="modalSignIn.js"></script>
 </body>
 </html>
